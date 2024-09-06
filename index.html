@@ -3,29 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamster Key 🔑Generator</title>
+    <title>Hamster playground Key Generator</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <div class="container">
         <h1>Hamster Key Generator</h1>
         <div id="gameSelectContainer" class="grid-container">
+	<div class="game-option" data-game="13">
+            <img src="https://cdn.hamsterkombat.io/stone_age/image.webp" alt="Stone Age"">
+            <p>Stone Age</p>
+	</div>
             <div class="game-option" data-game="12">
-            <img src="https://cdn.hamsterkombat.io/gangs_wars/image.webp" alt="Zoopolis"">
-            <p>Gangs Wars</p>
-            </div>
-            <div class="game-option" data-game="11">
-            <img src="https://cdn.hamsterkombat.io/zoopolis/image.webp" alt="Zoopolis"">
-            <p>Zoopolis</p>
+            <img src="https://cdn.hamsterkombat.io/fluff/image.webp" alt="Fluff"">
+            <p>Fluff Crusade</p>
             </div>
             <div class="game-option" data-game="10">
-            <img src="https://cdn.hamsterkombat.io/cafe_dash/image.webp" alt="CafeDash"">
-            <p>Cafe Dash</p>
+            <img src="https://cdn.hamsterkombat.io/tile_trio/image.webp" alt="CafeDash"">
+            <p>Tile Trio</p>
             </div>
-          <div class="game-option" data-game="9">
-            <img src="https://cdn.hamsterkombat.io/mud_racing/image.webp" alt="Polysphere">
-            <p>Mud Racing</p>
+			<div class="game-option" data-game="11">
+            <img src="https://cdn.hamsterkombat.io/zoopolis/image.webp" alt="Zoopolis"">
+            <p>Zoopolis</p>
             </div>
             <div class="game-option" data-game="8">
             <img src="https://cdn.hamsterkombat.io/mow_trim/image.webp" alt="Polysphere">
@@ -82,8 +84,9 @@
         <p id="copyStatus" class="hidden">Keys copied to clipboard!</p>
         
         <div class="footer">
-            <p>Use the button bellow to join our crypto commmunity.</p>
-            <button id="sourceCode">DH-CRYPTO FAM</button>
+            <p>Join our telegram crypto community with the button bellow</p>
+            <button id="sourceCode">DH-CRYPTOFAM</button>
+			<button id="themeToggleBtn" onclick="toggleTheme()"><i id="themeIcon" class="fas fa-sun"></i></button>
         </div>
     </div>
 
